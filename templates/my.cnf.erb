@@ -3,6 +3,7 @@ port=<%= scope.lookupvar "mysql::config::port" %>
 socket=<%= scope.lookupvar "mysql::config::socket" %>
 
 [server]
+bind-address=127.0.0.1
 datadir=<%= scope.lookupvar "mysql::config::datadir" %>
 log-error=<%= scope.lookupvar "mysql::config::logerror" %>
 port=<%= scope.lookupvar "mysql::config::port" %>
